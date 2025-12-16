@@ -6,4 +6,4 @@
 
 __pycache__/
 
-./tools/totp_qr.png
+tools/totp_qr.png
