@@ -5,7 +5,7 @@ from app.config import get_settings
 from app.dto import TokenResponse
 from app.security import get_otp_helper, create_session
 from app.security.session_store import get_session, revoke_session
-from app.security.totp_helper import OtpHelper
+from app.security.otp_helper import OtpHelper
 
 router = APIRouter(
     prefix="/auth",
