@@ -1,0 +1,9 @@
+.env
+
+.vscode/
+.venv/
+.idea/
+
+__pycache__/
+
+./tools/totp_qr.png
