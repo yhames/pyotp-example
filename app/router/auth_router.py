@@ -30,6 +30,7 @@ def post_session_get(
 
     # 2. OTP 검증
     if not otp_helper.verify_otp(x_otp):
+        otp_helper.record_failure(client_ip)
         raise HTTPException(status_code=403, detail="Invalid OTP")
 
     # 3. OTP 재사용 방지
